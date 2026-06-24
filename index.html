@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-section">
+        <div class="section">
+            <div class="header">
+                <h1>Currency Converter</h1>
+                <span>Check live rates, set rate alerts, receive notification and more.</span>
+            </div>
+            <div class="converter-section">
+                <div class="from ">
+                    <span>Amount</span>
+                    <div class="box">
+                        <div class="flag">
+                            <img src="https://flagcdn.com/w320/us.png">
+                        </div>
+                        <select name="from">
+                            <!-- <option value="USD" selected>USD</option>
+                            <option value="INR">INR</option>
+                            <option value="NPR">NPR</option> -->
+                        </select>
+                        <input type="number" name="amount" id="fromAmount" value="1.00" placeholder="Enter Amount">
+                    </div>
+                </div>
+                <div class="exchange-logo"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                <div class="to">
+                    <span>Converted Amount</span>
+                    <div class="box">
+                        <div class="flag">
+                            <img src="https://flagcdn.com/w320/np.png">
+                        </div>
+                        <select name="to">
+                            <!-- <option value="USD">USD</option>
+                            <option value="INR">INR</option>
+                            <option value="NPR" selected>NPR</option> -->
+                        </select>
+                        <input type="number" name="amount" id="toAmount" value="151.573" placeholder="Converted Amount">
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span>Indicative Exchange Rate</span>
+                <p>1 USD = 151.573 NPR</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+.main-section{
+    @apply h-160 flex justify-center items-center bg-[#e9edfa];
+}
+
+.section{
+    @apply w-100  mt-3 bg-sky-50 rounded-lg shadow-lg;
+}
+.header{
+    @apply text-center px-3 m-1;
+}
+.header h1{
+    @apply text-4xl font-bold;
+}
+.header span{
+    color: rgb(70, 67, 67);
+    @apply text-center;
+}
+.converter-section{
+    @apply w-90 m-5 relative rounded-lg p-2 bg-white shadow-lg;
+}
+.converter-section .from, .converter-section .to{
+    @apply p-2;
+}
+.converter-section .from span, .converter-section .to span{
+    font-weight: 500;
+}
+.converter-section .box{
+    @apply flex items-center justify-between mt-2;
+}
+.converter-section .box input{
+    border: none;
+    @apply bg-[#efefef] p-1 rounded-md;
+}
+.converter-section .exchange-logo{
+    border-color: #efefef;
+    @apply w-80 mx-3 border my-2 hover:cursor-pointer;
+}
+.converter-section .exchange-logo i{
+    @apply rotate-90 absolute left-40 top-22 border rounded-full w-8 h-8 flex justify-center items-center text-white bg-[#26278d];
+}
+.converter-section .box .flag{
+    @apply w-10 h-10 rounded-full shadow-lg hover:cursor-pointer overflow-hidden;
+}
+.converter-section .box .flag img{
+    @apply w-full h-full object-cover;
+}
+.converter-section .box select{
+    @apply w-18 hover:cursor-pointer;
+}
+.main-section .footer{
+    @apply mx-6 mt-0 mb-6;
+}
+.main-section .footer span{
+    color: rgb(70, 67, 67);
+    @apply p-0 m-0;
+}
+.main-section .footer p{
+    font-weight: 600;
+}
