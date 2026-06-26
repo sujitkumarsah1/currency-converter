@@ -2,24 +2,24 @@
 @tailwind utilities;
 
 .main-section{
-    @apply h-160 flex justify-center items-center bg-[#e9edfa];
+    @apply h-160 flex justify-center items-center bg-[#e9edfa] max-sm:h-209;
 }
 
 .section{
-    @apply w-100  mt-3 bg-sky-50 rounded-lg shadow-lg;
+    @apply w-100  mt-3 bg-sky-50 rounded-lg shadow-lg max-sm:w-90;
 }
 .header{
     @apply text-center px-3 m-1;
 }
 .header h1{
-    @apply text-4xl font-bold;
+    @apply text-4xl font-bold max-sm:text-3xl;
 }
 .header span{
     color: rgb(70, 67, 67);
     @apply text-center;
 }
 .converter-section{
-    @apply w-90 m-5 relative rounded-lg p-2 bg-white shadow-lg;
+    @apply w-90 m-5 relative rounded-lg p-2 bg-white shadow-lg max-sm:w-80;
 }
 .converter-section .from, .converter-section .to{
     @apply p-2;
@@ -32,14 +32,14 @@
 }
 .converter-section .box input{
     border: none;
-    @apply bg-[#efefef] p-1 rounded-md;
+    @apply w-50 bg-[#efefef] p-1 rounded-md max-sm:w-40 ;
 }
 .converter-section .exchange-logo{
     border-color: #efefef;
-    @apply w-80 mx-3 border my-2 hover:cursor-pointer;
+    @apply w-80 mx-3 border my-2 hover:cursor-pointer max-sm:w-70;
 }
 .converter-section .exchange-logo i{
-    @apply rotate-90 absolute left-40 top-22 border rounded-full w-8 h-8 flex justify-center items-center text-white bg-[#26278d];
+    @apply rotate-90 absolute left-40 max-sm:left-35 top-22 border rounded-full w-8 h-8 flex justify-center items-center text-white bg-[#26278d];
 }
 .converter-section .box .flag{
     @apply w-10 h-10 rounded-full shadow-lg hover:cursor-pointer overflow-hidden;

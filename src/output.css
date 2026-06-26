@@ -10,6 +10,8 @@
     --color-sky-50: oklch(97.7% 0.013 236.62);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-bold: 700;
@@ -174,6 +176,9 @@
   align-items: center;
   justify-content: center;
   background-color: #e9edfa;
+  @media (width < 40rem) {
+    height: calc(var(--spacing) * 209);
+  }
 }
 .section {
   margin-top: calc(var(--spacing) * 3);
@@ -182,6 +187,9 @@
   background-color: var(--color-sky-50);
   --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  @media (width < 40rem) {
+    width: calc(var(--spacing) * 90);
+  }
 }
 .header {
   margin: var(--spacing);
@@ -193,6 +201,10 @@
   line-height: var(--tw-leading, var(--text-4xl--line-height));
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
+  @media (width < 40rem) {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
 }
 .header span {
   color: rgb(70, 67, 67);
@@ -207,6 +219,9 @@
   padding: calc(var(--spacing) * 2);
   --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  @media (width < 40rem) {
+    width: calc(var(--spacing) * 80);
+  }
 }
 .converter-section .from, .converter-section .to {
   padding: calc(var(--spacing) * 2);
@@ -222,9 +237,13 @@
 }
 .converter-section .box input {
   border: none;
+  width: calc(var(--spacing) * 50);
   border-radius: var(--radius-md);
   background-color: #efefef;
   padding: var(--spacing);
+  @media (width < 40rem) {
+    width: calc(var(--spacing) * 40);
+  }
 }
 .converter-section .exchange-logo {
   border-color: #efefef;
@@ -237,6 +256,9 @@
     @media (hover: hover) {
       cursor: pointer;
     }
+  }
+  @media (width < 40rem) {
+    width: calc(var(--spacing) * 70);
   }
 }
 .converter-section .exchange-logo i {
@@ -254,6 +276,9 @@
   border-width: 1px;
   background-color: #26278d;
   color: var(--color-white);
+  @media (width < 40rem) {
+    left: calc(var(--spacing) * 35);
+  }
 }
 .converter-section .box .flag {
   height: calc(var(--spacing) * 10);
